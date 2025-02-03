@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fake News Detection</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+  <div class="img">
+            <img src="C:\Users\sravy\Downloads\Fake-news-detection-master (1)\Fake-news-detection-master\templates\fact.jpeg" alt="image">
+        </div>
+	<h1>Predict Fake News 📰</h1>
+
+
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="news" placeholder="Enter the news url" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+ <div class=" team">
+                <p>⭐Created by Team3⭐</p>
+    </div>
+    <hr>
+    <div class="bg">
+   <h1 class="team1">Our team</h1>
+    <div class="about">
+        <div class="images">
+            <img src="C:\Users\sravy\Downloads\Fake-news-detection-master (1)\Fake-news-detection-master\templates\chandana.jpeg" alt="" >
+            <h2>S.Chandana</h2>
+
+        </div>
+        <div class="images">
+            <img src="C:\Users\sravy\Downloads\Fake-news-detection-master (1)\Fake-news-detection-master\templates\sravya.jpeg" alt="" >
+            <h2>K.Syam Sravya</h2>
+            
+        </div>
+        <div class="images">
+            <img src="C:\Users\sravy\Downloads\Fake-news-detection-master (1)\Fake-news-detection-master\templates\pavithra.jpeg" alt="" >
+            <h2>G.Pavithra</h2>
+        </div>
+        <div class="images">
+            <img src="C:\Users\sravy\Downloads\Fake-news-detection-master (1)\Fake-news-detection-master\templates\akanksha.jpeg" alt="" >
+            <h2>B.Akanksha</h2>
+        </div>
+        <div class="images">
+            <img src="C:\Users\sravy\Downloads\Fake-news-detection-master (1)\Fake-news-detection-master\templates\triveni.jpeg" alt="" >
+            <h2>&nbsp   U.Triveni</h2>
+        </div>
+        <div class="images">
+            <img src="C:\Users\sravy\Downloads\Fake-news-detection-master (1)\Fake-news-detection-master\templates\sowmya.jpeg" alt="" >
+            <h2>S.Sowmya</h2>
+        </div>
+    </div>
+
+
+</body>
+</html>
